@@ -1,0 +1,423 @@
+body {
+	max-width: 375px;
+	background-image: url("../img/logotype.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	background-position: center;
+	color: #fff;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 4vw;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+#chatMe{
+	position: sticky;
+	top: 80vh;
+	font-size: 6vw;
+	text-align: center;
+	background: #EC9300;
+	width: 10vw;
+	height: 10vw;
+	color: #fff;
+	left: 84vw;
+	border-radius: 50%;
+	transition: 0.5s ease;
+}
+#chatMe:hover{
+	transform: scale(0.9);
+}
+
+
+header {
+	background-image: url("../img/AO_Row-LTF-final1.gif");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	width: 100vw;
+	margin: 0;
+	padding: 20vw 0vw;
+}
+
+header strong {
+	color: #970002;
+}
+header h2 {
+	font-size: 10vw;
+	width: 80vw;
+	text-shadow: 1px 1px 10px #fff;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+header p {
+	margin-top: 10vw;
+	margin-left: 45vw;
+	
+}
+.myButtons {
+	text-align: center;
+	background: #EC9300;
+	width: 30vw;
+	border-radius: 10px;
+	padding: 2vw;
+	box-shadow: 2px 2px 10px #fff;
+}
+.myButtons:active {
+	box-shadow: 0px 0px 0px #000;
+	transform: translate(3px,3px)
+}
+nav {
+	display: flex;
+	width: 100%;
+	background: #fff;
+	justify-content: space-around;
+    position: -webkit-sticky;
+    position: sticky;
+	z-index: 1;
+	top: 0;
+	color: #000;
+	padding: 4vw 0;
+	box-shadow: 0px 3px 10px #aaa;
+	margin: 0;
+
+}
+nav h1 {
+	margin: 0;
+	font-size: 6vw;	
+}
+
+nav ul {
+	display: none;
+	list-style: none;
+	position: absolute;
+	background: #fff;
+	padding: 5vw 0vw 5vw 10vw;
+	width: 90vw;
+	top: 13vw;
+}
+nav ul li {
+	margin: 1vw 0;
+}
+nav ul li:hover {
+	text-shadow: 0px 2px 15px #000;
+}
+
+nav button:focus + ul {
+	display: block;
+}
+nav button:focus{
+	pointer-events: none;
+}
+nav #helpmenua input {
+	font-size: 5vw;
+	padding-left: 2vw;
+	width: 75vw;
+	height: 10vw;
+	border-radius: 10px ;
+	margin-bottom: 15px;
+}
+
+nav button {
+	font-size: 8vw;	
+	background: #fff;
+	border: 0px;
+}
+
+#barmenu:active + ul {
+	display: block;
+		
+}
+
+img {
+	width: 100%;
+}
+
+main {
+	margin-top: 20px;
+}
+
+main div {
+	background: rgba(0,0,0,0.75);
+	padding: 1vw 4vw;
+}
+main div h3 {
+	text-shadow: 3px 3px 15px #EC9300;
+
+}
+
+.centerme {
+	text-align: center;
+}
+
+.hideMe {
+	display: none;
+}
+figure {
+	width: 100%;
+	margin: 30px 0;
+}
+figcaption {
+	text-align: end;
+	margin-bottom: 3px;
+}
+
+.clickMe {
+	border-radius: 20px;
+	box-shadow: 1px 5px 15px #EC9300;
+	transition: 0.5s ease;
+}
+.clickMe:hover {
+	transform: scale(0.95);
+}
+
+.clickMe:hover + .hideMe {
+	display: block;
+}
+
+
+
+.dlMe img {
+	display: block;
+	margin: 15px auto;
+	width: 60%;
+	box-shadow: 0 0 15px #EC9300;
+	border-radius: 10px;
+	transition: 0.5s ease;
+}
+
+.dlMe img:hover {
+	transform: scale(0.95);
+}
+
+
+
+
+footer {
+	padding: 2vw;
+	background: rgba(0,0,0,0.88);
+	margin-top: 50px;
+}
+
+footer h4 {
+	padding: 2vw;
+	text-shadow: 4px 4px 10px #EC9300;
+	margin-bottom: 0;
+	padding-bottom: 0;
+
+}
+footer h3 {
+	text-align: center;
+	padding: 2vw;
+	text-shadow: 1px 5px 15px #fff;
+}
+footer ul {
+	list-style: none;
+}
+.folMe {
+	margin: 15px 0 0 0; 
+	font-size: 10vw;
+	display: flex;
+	width: 70%;
+	justify-content: space-around;
+}
+
+.hoverMe li:hover {
+	color:#EC9300;
+}
+
+@keyframes moveMe{
+	from {transform: rotateY(0deg);}
+	to {transform: rotateY(360deg);}
+}
+
+.folMe i {
+	background: #EC9300;
+	padding: 2vw 2vw 2vw 2vw;
+	width: 10vw;
+	height: 10vw;
+	border-radius: 10px;
+	animation: moveMe 10s infinite;
+	text-align: center;
+	box-shadow: 0px 5px 15px #fff;
+
+}
+
+@media (min-width:376px) {
+	body {
+		max-width:768px; 
+		font-size: 3vw;
+
+	}
+	header {
+	background-image: url("../img/source.gif");
+}
+
+	
+	.usp2 div {
+		background-color: rgba(0,0,0,0);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+	}
+		.usp2 div figure{
+			width: 45%;		
+	}
+	
+	.clickMe {
+		height: 22vw;
+	}
+
+	.dlMe div {
+		background-color: rgba(0,0,0,0);
+		display: flex;
+	}
+	.dlMe div img {
+		width:30%;
+		height: 7.5vw
+	}
+	
+}
+
+@media (min-width:769px) {
+	body {
+		max-width:1200px; 
+		font-size: 1.5vw;
+
+	}
+	.myButtons{
+		margin-left: 70vw;
+
+	width: 15vw;
+	font-size: 2vw;
+
+	}
+	header {
+	padding: 5vw 0vw;
+	background-image: url("../img/kettlebell-3293475_1920.jpg");
+}
+		nav {
+		display: flex;
+		flex-direction: row-reverse;
+		font-size: 2vw;
+		padding: 2vw 0 5vw 0;
+}
+	nav h1 {
+		
+		font-size: 2vw;
+		margin-bottom: 1vw;
+	}
+		#barmenu {
+		display: none;
+		
+	}
+	
+	#barmenua {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+		width: 50vw;
+		top:5vw;
+		font-size: 1.5vw;
+	}
+	#helpmenu {
+		display: none;
+	}
+		.usp2 div figure{
+			width: 22%;		
+	}
+	
+	figcaption {
+		font-size:1.5vw; 
+	}
+	.clickMe {
+		height: 12vw;
+	}
+
+	.flexMe {
+		font-size: 1vw;
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	.firstflex {
+		width: 25vw;
+	}
+	
+	.folMe {
+	font-size: 2vw;
+}
+	.folMe i {
+	padding: 1vw;
+	width: 2vw;
+	height: 2vw;
+}
+			#chatMe{
+		font-size: 3vw;
+		width: 5vw;
+		height: 5vw;
+
+	}
+
+
+}
+
+@media (min-width:1201px) {
+	body {
+		max-width:inherit; 
+		margin: 0 auto;
+		font-size: 18px;
+
+	}
+		#chatMe{
+		font-size: 72px;
+		width: 120px;
+		height: 120px;
+
+	}
+
+	
+	main {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.myButtons{
+		width: 180px;
+		font-size: 24px;
+
+	}
+	header {
+	padding: 30px 0vw;
+		
+}
+		nav {
+		font-size: 24px;
+}
+	nav h1 {
+		font-size: 24px;
+}
+	
+	#barmenua {
+		width: 600px;
+		font-size: 18px;
+	}
+	
+	figcaption {
+		font-size:18px; 
+	}
+	.clickMe {
+		height: 144px;
+	}
+		.dlMe div img {
+		width:275px;
+		height: 90px;
+	}
+header h2 {
+	font-size: 120px;
+}
+
+
+}
+
